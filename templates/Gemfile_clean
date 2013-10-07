@@ -8,8 +8,7 @@ gem 'email_validator'
 gem 'flutie'
 gem 'high_voltage'
 gem 'jquery-rails'
-gem 'neat'
-gem 'pg'
+gem 'compass-rails', '~> 2.0.alpha.0'
 gem 'rack-timeout'
 gem 'rails', '>= 4.0.0'
 gem 'recipient_interceptor'
@@ -17,6 +16,7 @@ gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'unicorn'
+gem 'activeadmin', github: 'gregbell/active_admin', branch: 'rails4'
 
 group :development do
   gem 'better_errors'
@@ -27,6 +27,7 @@ end
 group :development, :test do
   gem 'factory_girl_rails'
   gem 'rspec-rails', '>= 2.14'
+  gem 'rack-livereload'
 end
 
 group :test do
